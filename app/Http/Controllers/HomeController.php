@@ -40,6 +40,8 @@ class HomeController extends Controller
         $messages = new \App\messagesDB();
         $messages->to = $getUser->id;
         $messages->message_thread = $request->messages;
+        $messages->gender = $request->gender;
+        $messages->name = $request->name;
         $messages->save();
 
         return back()->with('sukses', 'sukses');
@@ -52,6 +54,7 @@ class HomeController extends Controller
             ->join('messages', 'occulter.id', '=', 'messages.to')
             ->select('messages.*', 'occulter.*')
             ->where('occulter.id', '=', $dec)
+            ->orderBy('messages.created_at', 'DESC')
             ->paginate(3);
         // dd($getUser);
         return view('homepage.timeline', ['getUser' => $getUser, 'user' => $user]);

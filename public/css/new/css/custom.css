@@ -179,7 +179,7 @@
 }
 
 .text-gradient-blue-sarjana {
-    background: linear-gradient(to right, #3c1053 0%, #ad5389 100%);
+    background: linear-gradient(to right, #4aa5e7 0%, #3363ac 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900 !important;

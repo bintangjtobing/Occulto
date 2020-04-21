@@ -14,6 +14,19 @@
 Route::get('/', function () {
     return view('homepage.index');
 });
+Route::get('terms', function () {
+    return view('homepage.terms');
+});
+Route::get('about', function () {
+    return view('homepage.about');
+});
+Route::get('help', function () {
+    return view('homepage.help');
+});
+Route::get('f.a.q', function () {
+    return view('homepage.faq');
+});
+
 Route::post('/send-name', 'HomeController@send');
 Route::get('/u/{encId}/{tokens}', 'HomeController@viewUser')->name('viewUser');
 Route::get('/{encId}', 'HomeController@clientside');

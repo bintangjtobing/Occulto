@@ -2,7 +2,19 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRG9QW1HEM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HRG9QW1HEM');
+
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Occulto">
@@ -29,6 +41,7 @@
     <link href="{!!asset('css/new/css/event-style.css')!!}" rel="stylesheet">
     <link href="{!!asset('css/new/css/font-awesome.css')!!}" rel="stylesheet">
     <link href="{!!asset('css/datatables.min.css')!!}" rel="stylesheet">
+    <link href="{!!asset('css/material-design/material-icons.css')!!}" rel="stylesheet">
     <link rel="stylesheet" href="{!!asset('css/themify-icons.css')!!}">
     <link rel="stylesheet" href="{!!asset('css/new/css/custom.css')!!}">
 
@@ -39,6 +52,7 @@
     <meta property="og:type" content="@yield('ogtype')" />
     <meta property="og:title" content="@yield('title')" />
     <meta property="og:description" content="@yield('metadesc')" />
+
 </head>
 
 <body>
@@ -46,11 +60,11 @@
         {
             "@context": "https://schema.org/",
             "@type": "WebSite",
-            "name": "Sarjanamalam",
-            "url": "https://sarjanamalam.com/tentang-sarjana-malam",
+            "name": "Occulto",
+            "url": "https://occulto.site/about",
             "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://sarjanamalam.com/{search_term_string}",
+                "target": "https://occulto.site/{search_term_string}",
                 "query-input": "required name=search_term_string"
             }
         }
@@ -76,25 +90,22 @@
         <div class="copyright-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="social-icons social-icons-colored float-left">
+                    <div class="col-12 text-center">
+                        <div class="social-icons social-icons-colored">
+                            <?php $year = date('Y') ?>
                             {{-- <img src="{!!url('https://res.cloudinary.com/sarjanamalam/image/upload/v1585879117/Occulto/Based/Logo_Fix_xfkuyp.png')!!}"
                                 alt="Logo sarjanamalam." class="img-footer-belong"> --}}
                             <ul>
-                                <li><a href="#">ABOUT</a></li>
-                                <li><a href="#">HELP</a></li>
-                                <li><a href="#">TERMS</a>
+                                <li><a href="about">ABOUT</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li><a href="f.a.q">FAQ</a></li>
+                                <li><a href="terms">TERMS</a>
                                 </li>
-                                <li><a href="#">PRIVACY</a></li>
-                                <li><a href="#">LANGUAGE</a></li>
+                                <li><b>&copy; {{$year}} OCCULTO FROM SARJANAMALAM</b></li>
                             </ul>
                         </div>
 
-                    </div>
-                    <div class="col-lg-6">
-                        <?php $year = date('Y') ?>
-                        <div class="copyright-text text-right">&copy; {{$year}} OCCULTO FROM SARJANAMALAM
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -111,19 +122,6 @@
     <script src="{!!asset('js/gmap3.min.js')!!}"></script>
     <script src="{!!asset('js/map-styles.js')!!}"></script>
     <script src="{!!asset('css/new/plugins/js/infinite-scroll.min.js')!!}"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68593210-11"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-68593210-11');
-
-    </script>
     {{-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e34faf019de314d"></script> --}}
     {{-- <script src="https://cdn.tiny.cloud/1/8ll77vzod9z7cah153mxwug6wu868fhxsr291kw3tqtbu9om/tinymce/5/tinymce.min.js"
         referrerpolicy="origin"></script>

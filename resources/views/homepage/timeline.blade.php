@@ -6,14 +6,15 @@
 @section('content')
 <?php $encId = base64_encode($user->id); ?>
 <section>
-    <div class="container centerwebs" style="margin-top:0px !important;">
+    <div class="container centerwebs">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-9">
                 <h2 class="font-weight-400 m-b-0">Look what people have been sent to <b>{{$user->name}}</b>.</h2>
                 <div class="list-group mt-2">
                     @foreach ($getUser as $item)
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                         <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><span><i class="fas fa-user-secret"></i></span> Anonymous user</h5>
                             <small>{{Carbon\Carbon::parse($item->created_at)->diffForHumans()}}</small>
                         </div>
                         <p class="mb-1">{!!$item->message_thread!!}</p>
