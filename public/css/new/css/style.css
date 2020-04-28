@@ -78,6 +78,10 @@ body {
 
 }
 
+body {
+    background-image: url(https://res.cloudinary.com/sarjanamalam/image/upload/v1587453428/Occulto/Based/background-vec_bezzvm.jpg);
+}
+
 body .body-inner,
 body #wrapper {
     padding: 0;
@@ -178,7 +182,7 @@ section {
     width: 100%;
     /* overflow: hidden; */
     z-index: 1;
-    background-color: #fff;
+    /* background-color: #fff; */
     height: 100%;
 }
 

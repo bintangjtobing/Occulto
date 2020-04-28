@@ -5,10 +5,10 @@
 @section('content')
 <section>
     <div class="container centerwebs">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
             <h2><strong>Frequently Asked Questions</strong></h2>
-            <p>If you need inquires, lets connect on email<br><a
-                    href="mailto:ask@sarjanamalam.com">ask@sarjanamalam.com</a>
+            <p>Having questions? Before contacting us you might want to look through the questions and answers in this
+                section.
             </p>
             <div class="accordion accordion-shadow">
                 <div class="ac-item">

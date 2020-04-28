@@ -77,9 +77,9 @@
                 <div class="container">
 
                     <div id="logo"> <a href="/"><span class="logo-default"><img
-                                    src="https://res.cloudinary.com/sarjanamalam/image/upload/v1585879117/Occulto/Based/Logo_Fix_xfkuyp.png"
+                                    src="https://res.cloudinary.com/sarjanamalam/image/upload/v1587454018/Occulto/Based/Logo_Fix_white_t7bwbu.png"
                                     alt=""></span><span class="logo-dark"><img
-                                    src="https://res.cloudinary.com/sarjanamalam/image/upload/v1585879117/Occulto/Based/Logo_Fix_xfkuyp.png"
+                                    src="https://res.cloudinary.com/sarjanamalam/image/upload/v1587454018/Occulto/Based/Logo_Fix_white_t7bwbu.png"
                                     alt=""></span></a> </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                                 <li><a href="about">ABOUT</a></li>
                                 <li><a href="help">HELP</a></li>
                                 <li><a href="f.a.q">FAQ</a></li>
-                                <li><a href="terms">TERMS</a>
+                                {{-- <li><a href="terms">TERMS</a> --}}
                                 </li>
                                 <li><b>&copy; {{$year}} OCCULTO FROM SARJANAMALAM</b></li>
                             </ul>

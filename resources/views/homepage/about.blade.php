@@ -11,7 +11,7 @@
             <br>We promise that your data will get a protected and secretly. We always keeping you in privacy.</p>
         <div class="row">
             <div class="col-md-12 my-3 text-left">
-                <h1><b>Occulto is from <span class="text-gradient-blue-sarjana">Sarjanamalam</span>.<br>Have fun with
+                <h1><b>Occulto is from Sarjanamalam.<br>Have fun with
                         what people<br>say to you.</b></h1>
             </div>
         </div>
